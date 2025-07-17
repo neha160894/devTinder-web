@@ -9,3 +9,4 @@
 
 - install daisyUI : npm i -D daisyui@latest
 - install React Router : npm i react-router-dom
+- install redux toolkit using - npm i @reduxjs/toolkit react-redux
