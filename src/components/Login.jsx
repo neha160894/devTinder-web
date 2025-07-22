@@ -14,11 +14,14 @@ const Login = () => {
 
   const handleLogin = async () => {
     try {
-      const res = await axios.post(BASE_URL + "/login", {
-        emailId,
-        password,
-      },
-      { withCredentials: true });
+      const res = await axios.post(
+        BASE_URL + "/login",
+        {
+          emailId,
+          password,
+        },
+        { withCredentials: true }
+      );
       dispatch(addUser(res.data));
       return navigate("/");
     } catch (err) {
@@ -53,7 +56,9 @@ const Login = () => {
           </div>
           <p className="text-red-500">{error}</p>
           <div className="card-actions justify-center">
-            <button className="btn btn-primary" onClick={handleLogin}>Login</button>
+            <button className="btn btn-primary" onClick={handleLogin}>
+              Login
+            </button>
           </div>
         </div>
       </div>
