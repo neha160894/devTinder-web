@@ -82,6 +82,16 @@
     }
 - save and exit
 
+# adding a custom domain name
+- you can use godaddy.com to purchase domain name
+- setup DNS for your domain in godaddy.com by copying nameservers from cloudflare
+- setup SSL certs, etc using Cloudflare
+- wait for sometime till your nameservers are updated
+- edit the DNS records in cloudflare
+- edit the A record with AWS IP
+- to make the website secure, go to SSL/TLS -> Custom SSL/TLS -> Flexible -> Save
+- go to Edge Certificates -> Automatic https rewrites -> keep it enabled
+
 
 
 
